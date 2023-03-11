@@ -19,7 +19,7 @@ const PropertyReferrals = () => {
       <h1 className='mb-[40px]'>Property Referrals</h1>
       <div>
         {propertyReferralsInfo.map((bar)=>
-        <ProgressItem key={BarProp.title} {...bar} />
+        <ProgressItem key={bar.title} {...bar} />
         )}
       </div>
     </div>

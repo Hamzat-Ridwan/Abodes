@@ -10,6 +10,7 @@ import LatestSales from '@/components/LatestSales'
 
 const inter = Inter({ subsets: ['latin'] })
 
+
 export default function Home() {
   
   return (
