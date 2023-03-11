@@ -5,10 +5,7 @@ import Home from '.'
 
 
 const review = () => {
-  // const router = useRouter()
-  // useEffect(()=>(
-  //   router.push('/')
-  // ), [])
+  
   return (
     <div>
       <Home />
