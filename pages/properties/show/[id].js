@@ -38,7 +38,7 @@ const PropDetails = () => {
               <img className='mx-auto mb-4 h-14' src="/assets/abode.svg" alt="img" />
               <h2 className='mb-3 text-[20px] font-semibold'>Abodes Properties</h2>
               <p className='text-[16px] mb-3'>Agent</p>
-              <p className='flex gap-2 justify-center mb-3 text-[16px]'><img src="/assets/location.svg" alt="" /> Agbado Estate</p>
+              {/* <p className='flex gap-2 justify-center mb-3 text-[16px]'><img src="/assets/location.svg" alt="" /> Agbado Estate</p> */}
             </div>
             <div className='flex w-full justify-between gap-[15px]'>
               <button className='bg-primary justify-center w-[50%] ease-in-out text-lg hover:bg-secondary text-white items-center gap-1 flex rounded-lg px-[20px] py-2'><RiMessage2Fill/> Message</button>
