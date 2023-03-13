@@ -1,9 +1,11 @@
-import React from 'react'
+import { ScreenMode } from '@/context/context'
+import React, { useContext } from 'react'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Head from 'next/head'
 
 const Layout = ({children}) => {
+  const {dark} = useContext(ScreenMode)
   return (
     <>
       <Head>
@@ -13,11 +15,11 @@ const Layout = ({children}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-    <div className='flex'>
+    <div className={`flex ${dark? 'text-white': ''}`}>
         <Sidebar />
         <div className='w-full'>
           <Header />
-          <div className='bg-gray-100 p-[20px]'>
+          <div className= {` ${dark? 'bg-secondarydark': 'bg-gray-100'} min-h-[100vh] p-[20px]`}>
             {children}
           </div>
         </div>

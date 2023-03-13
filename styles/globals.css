@@ -8,8 +8,9 @@
 }
 
 body{
-  background: rgb(245, 245, 245);
-  /* background: #E5E5E5; */
+  /* background: rgb(245, 245, 245); */
+  /* background: #000000; */
+  font-family: 'Manrope', sans-serif;
 }
 
 p{

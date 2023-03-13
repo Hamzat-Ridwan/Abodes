@@ -1,9 +1,11 @@
-import React from 'react'
+import { ScreenMode } from '@/context/context'
+import React, { useContext } from 'react'
 import PropertyItem from './PropertyItem'
 
 const PropertyList = () => {
+  const {dark} = useContext(ScreenMode)
   return (
-    <div className='bg-white p-[20px] mt-[20px] rounded-xl ease-in-out duration-300'>
+    <div className={`${dark ? 'bg-primarydark' : 'bg-white' } p-[20px] mt-[20px] rounded-xl ease-in-out duration-300`}>
         <h1 className='mb-[20px]'>Property List</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  flex-wrap gap-[30px]'>
           <PropertyItem 

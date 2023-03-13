@@ -1,8 +1,13 @@
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
+import Context from "../context/context"
 
 export default function App({ Component, pageProps }) {
-  return <Layout>
-    <Component {...pageProps} />
-  </Layout>
+  return (
+    <Context>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Context>
+  )
 }

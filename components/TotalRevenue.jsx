@@ -1,11 +1,13 @@
 import { TotalRevenueOptions, TotalRevenueSeries } from '@/data/TotalRevData'
-import React from 'react'
+import { ScreenMode } from '@/context/context'
+import React, { useContext } from 'react'
 import dynamic from 'next/dynamic';
 const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 const TotalRevenue = () => {
+    const {dark} = useContext(ScreenMode)
   return (
-    <div className='flex flex-1 p-4 bg-white flex-col rounded-lg'>
+    <div className={`flex flex-1 p-4 ${dark ? 'bg-primarydark text-white' : 'bg-white' } flex-col rounded-lg`}>
         <h1>Total Revenue</h1>
         <div>
             <div className='flex gap-[50px] my-[20px]'>

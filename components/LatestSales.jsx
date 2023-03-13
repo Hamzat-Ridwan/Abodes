@@ -1,4 +1,5 @@
-import React from 'react'
+import { ScreenMode } from '@/context/context'
+import React, { useContext } from 'react'
 
 const SalesRow = ({name, img}) => (
   <div className=' flex justify-between mb-5 items-center'>
@@ -14,8 +15,9 @@ const SalesRow = ({name, img}) => (
 )
 
 const LatestSales = () => {
+  const {dark} = useContext(ScreenMode)
   return (
-    <div className='p-[20px] bg-white  rounded-lg col-span-1 sm:col-span-2 lg:col-span-1'>
+    <div className={`p-[20px] ${dark ? 'bg-primarydark text-white' : 'bg-white' }  rounded-lg col-span-1 sm:col-span-2 lg:col-span-1`}>
       <div className='flex justify-between items-center mb-[30px]'>
         <h1>Latest Sales</h1>
         <img src="/assets/right.svg" alt="" />

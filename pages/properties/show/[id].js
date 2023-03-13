@@ -2,16 +2,18 @@ import { List } from '@/data/PropList'
 import {RiMessage2Fill} from 'react-icons/ri'
 import {MdCall} from 'react-icons/md'
 import { useRouter } from 'next/router'
-import React from 'react'
+import { ScreenMode } from '@/context/context'
+import React, { useContext } from 'react'
 
 const PropDetails = () => {
     const router = useRouter()
     const id = router.query.id
     const prop = List.find(x => x.id == id)
+    const {dark} = useContext(ScreenMode)
   return (
-    <div className='p-[20px] w-full bg-white rounded-lg'>
+    <div className={`p-[20px] w-full ${dark ? 'bg-primarydark text-white' : 'bg-white' } rounded-lg`}>
       <h1 className='mb-[20px] text-2xl'>Details</h1>
-      <div className='sm:flex gap-[30px] w-full'>
+      <div className='flex flex-col sm:flex-row gap-[30px] w-full'>
         <div className='w-full sm:w-[64%]'>
           <img className='w-full'  src={prop.img} alt="img" />
           <div className='flex justify-between mt-[30px]'>

@@ -1,5 +1,6 @@
 import { propertyReferralsInfo } from '@/data/PropRefData'
-import React from 'react'
+import { ScreenMode } from '@/context/context'
+import React, { useContext } from 'react'
 
 const ProgressItem=({title, percentage, color})=>(
   <div className='w-full mb-6'>
@@ -14,8 +15,9 @@ const ProgressItem=({title, percentage, color})=>(
 )
 
 const PropertyReferrals = () => {
+  const {dark} = useContext(ScreenMode)
   return (
-    <div className='flex min-w-[390px] p-4 bg-white flex-col rounded-lg '>
+    <div className={`flex min-w-[390px] p-4 ${dark ? 'bg-primarydark text-white' : 'bg-white' } flex-col rounded-lg `}>
       <h1 className='mb-[40px]'>Property Referrals</h1>
       <div>
         {propertyReferralsInfo.map((bar)=>

@@ -1,8 +1,10 @@
-import React from 'react'
+import { ScreenMode } from '@/context/context'
+import React, { useContext } from 'react'
 
 const Customer = () => {
-  return (
-    <div className=' bg-white flex flex-col rounded-lg relative'>
+    const {dark} = useContext(ScreenMode)
+  return ( 
+    <div className={` ${dark ? 'bg-primarydark text-white' : 'bg-white' } flex flex-col rounded-lg relative`}>
         <div className=' flex justify-between p-[20px]'>
             <h1>Customer</h1>
             <img className='mr-2' src="/assets/dots.svg" alt="" />
