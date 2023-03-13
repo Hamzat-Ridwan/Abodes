@@ -15,11 +15,11 @@ const PropDetails = () => {
       <h1 className='mb-[20px] text-2xl'>Details</h1>
       <div className='flex flex-col sm:flex-row gap-[30px] w-full'>
         <div className='w-full sm:w-[64%]'>
-          <img className='w-full'  src={prop.img} alt="img" />
+          {/* <img className='w-full'  src={prop.img} alt="img" /> */}
           <div className='flex justify-between mt-[30px]'>
             <div className='mb-[40px]'>
               <h2 className='mb-2 text-[20px]'>{prop.title}</h2>
-              <p className='flex gap-2 text-base'><img src="/assets/location.svg" alt="" /> {prop.location}</p>
+              {/* <p className='flex gap-2 text-base'><img src="/assets/location.svg" alt="" /> {prop.location}</p> */}
             </div>
             <div>
               <h3 className='text-[20px]'>Price</h3>
@@ -37,7 +37,7 @@ const PropDetails = () => {
         <div className='flex-1'>
           <div className='p-[20px] border border-gray-300 rounded-xl w-full'>
             <div className='w-full text-center my-6 '>
-              <img className='mx-auto mb-4 h-14' src="/assets/abode.svg" alt="img" />
+              {/* <img className='mx-auto mb-4 h-14' src="/assets/abode.svg" alt="img" /> */}
               <h2 className='mb-3 text-[20px] font-semibold'>Abodes Properties</h2>
               <p className='text-[16px] mb-3'>Agent</p>
               <p className='flex gap-2 justify-center mb-3 text-[16px]'><img src="/assets/location.svg" alt="" /> Agbado Estate</p>
@@ -48,7 +48,7 @@ const PropDetails = () => {
             </div>
           </div>
           <div className='w-full mt-[20px]'>
-            <img className='w-full mb-[15px]' src="/assets/map.png" alt="img" />
+            {/* <img className='w-full mb-[15px]' src="/assets/map.png" alt="img" /> */}
             <button className='w-full bg-primary rounded-lg text-white py-3'>Book Now</button>
           </div>
         </div>
