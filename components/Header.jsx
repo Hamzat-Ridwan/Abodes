@@ -21,7 +21,7 @@ const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false)
   
   return (
-    <div className={` flex justify-between items-center px-[30px] py-[17px] ${dark ? 'bg-primarydark' : 'bg-white' } w-full sticky top-0 z-10`}>
+    <div className={` flex justify-between items-center px-[2.5%] sm:px-[30px] py-[17px] ${dark ? 'bg-primarydark' : 'bg-white' } w-full sticky top-0 z-10`}>
         <div>
           <div className={` ${dark? 'bg-secondarydark': 'bg-gray-100'} w-[300px] px-3 py-[6px] rounded-md hidden md:flex`}>
             <img src="/assets/search.svg" alt="" />
@@ -53,7 +53,7 @@ const Header = () => {
             x: 0
           }}
           exit={{x: '-350px'}}
-        className={`${compress? 'w-[70px]' : 'w-[350px]'}  duration-500 ease-out   h-[100vh] ${dark ? 'bg-primarydark' : 'bg-white' }  px-[10px] absolute md:hidden top-0 bottom-0 left-0 z-20`}>
+        className={`${compress? 'w-[70px]' : 'w-[65%]'}  duration-500 ease-out   h-[100vh] ${dark ? 'bg-primarydark' : 'bg-white' }  px-[10px] absolute md:hidden top-0 bottom-0 left-0 z-20`}>
         <MdClose className='ml-[10px] my-4 text-4xl' onClick={()=> setShowSidebar(false)} />
         <div className='flex items-center gap-2 mb-[50px] p-3'>
           <img src="/assets/abode.svg" alt="abode" />

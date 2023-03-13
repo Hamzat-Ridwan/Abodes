@@ -19,7 +19,7 @@ const Layout = ({children}) => {
         <Sidebar />
         <div className='w-full'>
           <Header />
-          <div className= {` ${dark? 'bg-secondarydark': 'bg-gray-100'} min-h-[100vh] p-[20px]`}>
+          <div className= {` ${dark? 'bg-secondarydark': 'bg-gray-100'} min-h-[100vh] p-[2.5%] sm:p-[20px]`}>
             {children}
           </div>
         </div>
