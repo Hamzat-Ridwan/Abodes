@@ -53,7 +53,7 @@ const Header = () => {
             x: 0
           }}
           exit={{x: '-350px'}}
-        className={`${compress? 'w-[70px]' : 'w-[350px]'}  duration-500 ease-out   h-[100vh] ${dark ? 'bg-primarydark' : 'bg-white' }  px-[10px] absolute md:hidden top-0 left-0 z-20`}>
+        className={`${compress? 'w-[70px]' : 'w-[350px]'}  duration-500 ease-out   h-[100vh] ${dark ? 'bg-primarydark' : 'bg-white' }  px-[10px] absolute md:hidden top-0 bottom-0 left-0 z-20`}>
         <MdClose className='ml-[10px] my-4 text-4xl' onClick={()=> setShowSidebar(false)} />
         <div className='flex items-center gap-2 mb-[50px] p-3'>
           <img src="/assets/abode.svg" alt="abode" />
