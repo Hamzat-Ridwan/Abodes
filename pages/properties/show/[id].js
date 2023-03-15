@@ -1,6 +1,4 @@
 import { List } from '@/data/PropList'
-import {RiMessage2Fill} from 'react-icons/ri'
-import {MdCall} from 'react-icons/md'
 import { useRouter } from 'next/router'
 import { ScreenMode } from '@/context/context'
 import React, { useContext } from 'react'

@@ -2,6 +2,7 @@ import { ScreenMode } from '@/context/context'
 import React, { useContext } from 'react'
 import {RiMessage2Fill} from 'react-icons/ri'
 import {MdCall} from 'react-icons/md'
+import Location from '../public/assets/location.svg'
 
 const Details = ({title, img, location, price}) => {
     const {dark} = useContext(ScreenMode)
@@ -15,7 +16,7 @@ const Details = ({title, img, location, price}) => {
           <div className='flex justify-between mt-[30px]'>
             <div className='mb-[40px]'>
               <h2 className='mb-2 text-[20px]'>{title}</h2>
-              <p className='flex gap-2 text-base'><img src="/assets/location.svg" alt="" /> {location}</p>
+              <p className='flex gap-1 text-base'><Location className='mt-1' /> {location}</p>
             </div>
             <div>
               <h3 className='text-[20px]'>Price</h3>
